@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <input type="checkbox" v-model="checkedBoxes" @change="controlClicks" value="fast" name="fast-box1"
+            id="fast-box1">
+        <label for="fast-box1">FAST</label>
+        <input type="checkbox" v-model="checkedBoxes" @change="controlClicks" value="cheap" name="cheap-box2"
+            id="cheap-box2">
+        <label for="cheap-box2">CHEAP</label>
+        <input type="checkbox" v-model="checkedBoxes" @change="controlClicks" value="good" name="good-box3"
+            id="good-box3">
+        <label for="good-box3">GOOD</label>
+        {{checkedBoxes}}
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
